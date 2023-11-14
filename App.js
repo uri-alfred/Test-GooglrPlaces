@@ -5,7 +5,7 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import BuscadorGooglePlaces from './components/BuscadorGooglePlaces';
 
 export default function App() {
-  const apiKey = "AIzaSyA1z4pNGYp7vCyEdzQ_y7tpI4zAapVrH_U";
+  const apiKey = "apiKey";
   return (
     // <SafeAreaView style={styles.inputSearch}>
     //   <GooglePlacesAutocomplete

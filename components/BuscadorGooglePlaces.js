@@ -9,7 +9,7 @@ const BuscadorGooglePlaces = () => {
         console.log(data, details);
       }}
       query={{
-        key: 'AIzaSyA1z4pNGYp7vCyEdzQ_y7tpI4zAapVrH_U',
+        key: 'apikey',
         language: 'es',
       }}
     />
