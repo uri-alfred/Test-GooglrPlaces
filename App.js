@@ -1,12 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import BuscadorGooglePlaces from './components/BuscadorGooglePlaces';
 
 export default function App() {
+  const apiKey = "AIzaSyA1z4pNGYp7vCyEdzQ_y7tpI4zAapVrH_U";
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <SafeAreaView style={styles.inputSearch}>
+    //   <GooglePlacesAutocomplete
+    //     placeholder="Type a place"
+    //     query={{key: apiKey}}
+        
+    //   />
+    // </SafeAreaView>
+    <BuscadorGooglePlaces />
   );
 }
 
@@ -17,4 +25,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  inputSearch: {
+    marginTop: 50,
+    borderWidth: 1
+  }
 });
